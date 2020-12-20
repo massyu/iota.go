@@ -3,7 +3,7 @@
 package bct
 
 import (
-	"github.com/iotaledger/iota.go/curl"
+	"github.com/massyu/iota.go/curl"
 )
 
 func transform(lto, hto, lfrom, hfrom *[curl.StateSize]uint, rounds uint) {

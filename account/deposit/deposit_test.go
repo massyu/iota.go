@@ -1,14 +1,15 @@
 package deposit_test
 
 import (
-	"github.com/iotaledger/iota.go/account/deposit"
-	"github.com/iotaledger/iota.go/checksum"
-	"github.com/iotaledger/iota.go/consts"
+	"strings"
+	"time"
+
+	"github.com/massyu/iota.go/account/deposit"
+	"github.com/massyu/iota.go/checksum"
+	"github.com/massyu/iota.go/consts"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/pkg/errors"
-	"strings"
-	"time"
 )
 
 var _ = Describe("Deposit", func() {

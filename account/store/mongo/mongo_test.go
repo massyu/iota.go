@@ -2,18 +2,19 @@ package mongo_test
 
 import (
 	"context"
-	"github.com/iotaledger/iota.go/account/deposit"
-	"github.com/iotaledger/iota.go/account/store"
-	mongo_store "github.com/iotaledger/iota.go/account/store/mongo"
-	"github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/transaction"
-	"github.com/iotaledger/iota.go/trinary"
+	"strings"
+	"time"
+
+	"github.com/massyu/iota.go/account/deposit"
+	"github.com/massyu/iota.go/account/store"
+	mongo_store "github.com/massyu/iota.go/account/store/mongo"
+	"github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/transaction"
+	"github.com/massyu/iota.go/trinary"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"strings"
-	"time"
 )
 
 const id = "d7e75aa9def2ef9c813313f0e0fb72b9"
@@ -58,7 +59,7 @@ var _ = Describe("Mongo", func() {
 			KeyIndex: 100,
 			PendingTransfers: map[string]*store.PendingTransfer{
 				exportedPendingTransferKey: {
-					Tails:  trinary.Hashes{exportedPendingTransfeTailHash},
+					Tails: trinary.Hashes{exportedPendingTransfeTailHash},
 				},
 			},
 			DepositAddresses: map[uint64]*store.StoredDepositAddress{},

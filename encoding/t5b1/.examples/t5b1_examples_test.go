@@ -3,8 +3,8 @@ package t5b1_examples_test
 import (
 	"fmt"
 
-	"github.com/iotaledger/iota.go/encoding/t5b1"
-	"github.com/iotaledger/iota.go/trinary"
+	"github.com/massyu/iota.go/encoding/t5b1"
+	"github.com/massyu/iota.go/trinary"
 )
 
 // i req: dst, The target slice for the encoded bytes.

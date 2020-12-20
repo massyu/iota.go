@@ -2,15 +2,16 @@ package mongo
 
 import (
 	"context"
-	"github.com/iotaledger/iota.go/account/store"
-	"github.com/iotaledger/iota.go/trinary"
+	"strconv"
+	"time"
+
+	"github.com/massyu/iota.go/account/store"
+	"github.com/massyu/iota.go/trinary"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.mongodb.org/mongo-driver/mongo/readconcern"
 	"go.mongodb.org/mongo-driver/mongo/writeconcern"
-	"strconv"
-	"time"
 )
 
 // ContextProviderFunc which generates a new context.

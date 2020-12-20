@@ -1,16 +1,17 @@
 package builder
 
 import (
-	"github.com/iotaledger/iota.go/account"
-	"github.com/iotaledger/iota.go/account/event"
-	"github.com/iotaledger/iota.go/account/plugins/promoter"
-	"github.com/iotaledger/iota.go/account/plugins/transfer/poller"
-	"github.com/iotaledger/iota.go/account/store"
-	"github.com/iotaledger/iota.go/account/timesrc"
-	"github.com/iotaledger/iota.go/api"
-	"github.com/iotaledger/iota.go/consts"
-	. "github.com/iotaledger/iota.go/trinary"
 	"time"
+
+	"github.com/massyu/iota.go/account"
+	"github.com/massyu/iota.go/account/event"
+	"github.com/massyu/iota.go/account/plugins/promoter"
+	"github.com/massyu/iota.go/account/plugins/transfer/poller"
+	"github.com/massyu/iota.go/account/store"
+	"github.com/massyu/iota.go/account/timesrc"
+	"github.com/massyu/iota.go/api"
+	"github.com/massyu/iota.go/consts"
+	. "github.com/massyu/iota.go/trinary"
 )
 
 // NewBuilder creates a new Builder which uses the default settings

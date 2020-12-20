@@ -1,7 +1,7 @@
 package curl
 
 import (
-	. "github.com/iotaledger/iota.go/consts"
+	. "github.com/massyu/iota.go/consts"
 )
 
 const (

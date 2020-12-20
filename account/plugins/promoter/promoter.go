@@ -1,18 +1,19 @@
 package promoter
 
 import (
-	"github.com/iotaledger/iota.go/account"
-	"github.com/iotaledger/iota.go/account/event"
-	"github.com/iotaledger/iota.go/account/store"
-	"github.com/iotaledger/iota.go/account/timesrc"
-	"github.com/iotaledger/iota.go/account/util"
-	"github.com/iotaledger/iota.go/api"
-	"github.com/iotaledger/iota.go/bundle"
-	"github.com/iotaledger/iota.go/transaction"
-	. "github.com/iotaledger/iota.go/trinary"
-	"github.com/pkg/errors"
 	"strings"
 	"time"
+
+	"github.com/massyu/iota.go/account"
+	"github.com/massyu/iota.go/account/event"
+	"github.com/massyu/iota.go/account/store"
+	"github.com/massyu/iota.go/account/timesrc"
+	"github.com/massyu/iota.go/account/util"
+	"github.com/massyu/iota.go/api"
+	"github.com/massyu/iota.go/bundle"
+	"github.com/massyu/iota.go/transaction"
+	. "github.com/massyu/iota.go/trinary"
+	"github.com/pkg/errors"
 )
 
 var ErrUnableToPromote = errors.New("unable to promote")

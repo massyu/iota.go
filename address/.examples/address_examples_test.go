@@ -2,10 +2,11 @@ package address_example_test
 
 import (
 	"fmt"
-	"github.com/iotaledger/iota.go/address"
-	"github.com/iotaledger/iota.go/consts"
 	"log"
 	"strings"
+
+	"github.com/massyu/iota.go/address"
+	"github.com/massyu/iota.go/consts"
 )
 
 // i req: address, The address from which to compute the checksum.

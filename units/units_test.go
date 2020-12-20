@@ -1,7 +1,7 @@
 package units_test
 
 import (
-	. "github.com/iotaledger/iota.go/units"
+	. "github.com/massyu/iota.go/units"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 

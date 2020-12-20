@@ -2,8 +2,9 @@ package checksum_examples_test
 
 import (
 	"fmt"
-	"github.com/iotaledger/iota.go/checksum"
-	"github.com/iotaledger/iota.go/consts"
+
+	"github.com/massyu/iota.go/checksum"
+	"github.com/massyu/iota.go/consts"
 )
 
 // i req: input, The Trytes of which to compute the checksum of.

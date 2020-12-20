@@ -1,13 +1,14 @@
 package gocks
 
 import (
-	. "github.com/iotaledger/iota.go/api"
-	. "github.com/iotaledger/iota.go/api/integration/samples"
-	"github.com/iotaledger/iota.go/bundle"
-	"github.com/iotaledger/iota.go/transaction"
-	. "github.com/iotaledger/iota.go/trinary"
-	"gopkg.in/h2non/gock.v1"
 	"time"
+
+	. "github.com/massyu/iota.go/api"
+	. "github.com/massyu/iota.go/api/integration/samples"
+	"github.com/massyu/iota.go/bundle"
+	"github.com/massyu/iota.go/transaction"
+	. "github.com/massyu/iota.go/trinary"
+	"gopkg.in/h2non/gock.v1"
 )
 
 func init() {

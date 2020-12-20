@@ -1,17 +1,18 @@
 package account
 
 import (
-	"github.com/iotaledger/iota.go/account/event"
-	"github.com/iotaledger/iota.go/account/store"
-	"github.com/iotaledger/iota.go/account/store/inmemory"
-	"github.com/iotaledger/iota.go/account/timesrc"
-	"github.com/iotaledger/iota.go/address"
-	"github.com/iotaledger/iota.go/api"
-	"github.com/iotaledger/iota.go/bundle"
-	"github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/trinary"
 	"strings"
 	"sync"
+
+	"github.com/massyu/iota.go/account/event"
+	"github.com/massyu/iota.go/account/store"
+	"github.com/massyu/iota.go/account/store/inmemory"
+	"github.com/massyu/iota.go/account/timesrc"
+	"github.com/massyu/iota.go/address"
+	"github.com/massyu/iota.go/api"
+	"github.com/massyu/iota.go/bundle"
+	"github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/trinary"
 )
 
 // InputSelectionFunc defines a function which given the account, transfer value and the flag balance check,

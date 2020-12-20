@@ -1,7 +1,7 @@
 package math_test
 
 import (
-	. "github.com/iotaledger/iota.go/math"
+	. "github.com/massyu/iota.go/math"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

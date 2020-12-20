@@ -7,8 +7,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/encoding/t5b1"
+	"github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/encoding/t5b1"
 )
 
 var (

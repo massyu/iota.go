@@ -2,10 +2,11 @@ package account_examples_test
 
 import (
 	"fmt"
-	"github.com/iotaledger/iota.go/account"
-	"github.com/iotaledger/iota.go/account/deposit"
 	"log"
 	"time"
+
+	"github.com/massyu/iota.go/account"
+	"github.com/massyu/iota.go/account/deposit"
 )
 
 var acc account.Account
@@ -189,5 +190,3 @@ func ExampleNewInMemorySeedProvider() {
 	// WEOIOSDFX...
 	fmt.Println(seed)
 }
-
-

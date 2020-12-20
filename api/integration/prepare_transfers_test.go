@@ -3,12 +3,12 @@ package integration_test
 import (
 	"strings"
 
-	. "github.com/iotaledger/iota.go/api"
-	. "github.com/iotaledger/iota.go/api/integration/samples"
-	"github.com/iotaledger/iota.go/bundle"
-	"github.com/iotaledger/iota.go/checksum"
-	. "github.com/iotaledger/iota.go/consts"
-	. "github.com/iotaledger/iota.go/trinary"
+	. "github.com/massyu/iota.go/api"
+	. "github.com/massyu/iota.go/api/integration/samples"
+	"github.com/massyu/iota.go/bundle"
+	"github.com/massyu/iota.go/checksum"
+	. "github.com/massyu/iota.go/consts"
+	. "github.com/massyu/iota.go/trinary"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/pkg/errors"

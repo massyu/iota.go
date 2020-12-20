@@ -3,11 +3,6 @@ package api
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/cespare/xxhash"
-	. "github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/pow"
-	"github.com/iotaledger/iota.go/trinary"
-	"github.com/pkg/errors"
 	"io/ioutil"
 	"math"
 	"math/rand"
@@ -15,6 +10,12 @@ import (
 	"net/url"
 	"strconv"
 	"sync"
+
+	"github.com/cespare/xxhash"
+	. "github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/pow"
+	"github.com/massyu/iota.go/trinary"
+	"github.com/pkg/errors"
 )
 
 // QuorumLevel defines the percentage needed for a quorum.
@@ -504,7 +505,7 @@ func (hc *quorumhttpclient) Send(cmd interface{}, out interface{}) error {
 			defer resp.Body.Close()
 
 			if resp.StatusCode != http.StatusOK && isLatestSolidSubtangleQuery {
-				anyError = ErrNonOkStatusCodeSubtangleMilestoneQuery;
+				anyError = ErrNonOkStatusCodeSubtangleMilestoneQuery
 				return
 			}
 

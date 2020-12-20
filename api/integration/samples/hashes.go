@@ -1,8 +1,9 @@
 package samples
 
 import (
-	. "github.com/iotaledger/iota.go/trinary"
 	"strings"
+
+	. "github.com/massyu/iota.go/trinary"
 )
 
 var Seed = "HZVEINVKVIKGFRAWRTRXWD9JLIYLCQNCXZRBLDETPIQGKZJRYKZXLTV9JNUVBIAHAGUZVIQWIAWDZ9ACW"

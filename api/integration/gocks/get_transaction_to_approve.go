@@ -1,10 +1,11 @@
 package gocks
 
 import (
-	. "github.com/iotaledger/iota.go/api"
-	. "github.com/iotaledger/iota.go/api/integration/samples"
-	"gopkg.in/h2non/gock.v1"
 	"strings"
+
+	. "github.com/massyu/iota.go/api"
+	. "github.com/massyu/iota.go/api/integration/samples"
+	"gopkg.in/h2non/gock.v1"
 )
 
 var TrunkTx = Bundle[len(Bundle)-1].TrunkTransaction

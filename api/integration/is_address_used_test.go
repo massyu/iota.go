@@ -1,8 +1,8 @@
 package integration_test
 
 import (
-	. "github.com/iotaledger/iota.go/api"
-	. "github.com/iotaledger/iota.go/api/integration/samples"
+	. "github.com/massyu/iota.go/api"
+	. "github.com/massyu/iota.go/api/integration/samples"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

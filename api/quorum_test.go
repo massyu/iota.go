@@ -2,13 +2,14 @@ package api_test
 
 import (
 	"fmt"
-	. "github.com/iotaledger/iota.go/api"
-	"github.com/iotaledger/iota.go/trinary"
+	"strings"
+
+	. "github.com/massyu/iota.go/api"
+	"github.com/massyu/iota.go/trinary"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/pkg/errors"
 	"gopkg.in/h2non/gock.v1"
-	"strings"
 )
 
 type fakereqres struct {

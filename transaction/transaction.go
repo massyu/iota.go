@@ -7,12 +7,12 @@ import (
 	"strconv"
 	"strings"
 
-	. "github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/curl"
-	"github.com/iotaledger/iota.go/encoding/ascii"
-	"github.com/iotaledger/iota.go/guards"
-	"github.com/iotaledger/iota.go/trinary"
-	. "github.com/iotaledger/iota.go/trinary"
+	. "github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/curl"
+	"github.com/massyu/iota.go/encoding/ascii"
+	"github.com/massyu/iota.go/guards"
+	"github.com/massyu/iota.go/trinary"
+	. "github.com/massyu/iota.go/trinary"
 	"github.com/pkg/errors"
 )
 

@@ -3,7 +3,7 @@ package curl
 import (
 	"math"
 
-	"github.com/iotaledger/iota.go/consts"
+	"github.com/massyu/iota.go/consts"
 )
 
 const rotationOffset = 364

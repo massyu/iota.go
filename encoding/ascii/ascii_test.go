@@ -1,7 +1,7 @@
 package ascii_test
 
 import (
-	. "github.com/iotaledger/iota.go/encoding/ascii"
+	. "github.com/massyu/iota.go/encoding/ascii"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

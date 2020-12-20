@@ -2,15 +2,16 @@ package deposit
 
 import (
 	"fmt"
-	"github.com/iotaledger/iota.go/bundle"
-	"github.com/iotaledger/iota.go/checksum"
-	"github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/curl"
-	. "github.com/iotaledger/iota.go/trinary"
-	"github.com/pkg/errors"
 	"net/url"
 	"strconv"
 	"time"
+
+	"github.com/massyu/iota.go/bundle"
+	"github.com/massyu/iota.go/checksum"
+	"github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/curl"
+	. "github.com/massyu/iota.go/trinary"
+	"github.com/pkg/errors"
 )
 
 // ErrAddressInvalid is returned when an address is invalid when parsed from a serialized form.

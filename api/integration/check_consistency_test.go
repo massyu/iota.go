@@ -1,13 +1,14 @@
 package integration_test
 
 import (
-	. "github.com/iotaledger/iota.go/api"
-	. "github.com/iotaledger/iota.go/api/integration/samples"
-	"github.com/iotaledger/iota.go/consts"
+	"strings"
+
+	. "github.com/massyu/iota.go/api"
+	. "github.com/massyu/iota.go/api/integration/samples"
+	"github.com/massyu/iota.go/consts"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/pkg/errors"
-	"strings"
 )
 
 var _ = Describe("CheckConsistency()", func() {

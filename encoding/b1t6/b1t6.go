@@ -8,8 +8,8 @@ import (
 	"math"
 	"strings"
 
-	"github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/trinary"
+	"github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/trinary"
 )
 
 const (

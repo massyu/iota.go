@@ -2,12 +2,12 @@
 package address
 
 import (
-	"github.com/iotaledger/iota.go/checksum"
-	. "github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/kerl"
-	. "github.com/iotaledger/iota.go/signing"
-	"github.com/iotaledger/iota.go/signing/key"
-	. "github.com/iotaledger/iota.go/trinary"
+	"github.com/massyu/iota.go/checksum"
+	. "github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/kerl"
+	. "github.com/massyu/iota.go/signing"
+	"github.com/massyu/iota.go/signing/key"
+	. "github.com/massyu/iota.go/trinary"
 )
 
 // Checksum returns the checksum of the given address.

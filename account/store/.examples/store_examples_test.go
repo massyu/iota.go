@@ -2,9 +2,10 @@ package _examples
 
 import (
 	"fmt"
-	"github.com/iotaledger/iota.go/account/store"
-	"github.com/iotaledger/iota.go/account/store/inmemory"
 	"log"
+
+	"github.com/massyu/iota.go/account/store"
+	"github.com/massyu/iota.go/account/store/inmemory"
 )
 
 var db = inmemory.InMemoryStore{}

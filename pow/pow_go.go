@@ -15,10 +15,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	. "github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/curl"
-	. "github.com/iotaledger/iota.go/transaction"
-	. "github.com/iotaledger/iota.go/trinary"
+	. "github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/curl"
+	. "github.com/massyu/iota.go/transaction"
+	. "github.com/massyu/iota.go/trinary"
 )
 
 var (

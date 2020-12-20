@@ -3,8 +3,8 @@ package b1t6_examples_test
 import (
 	"fmt"
 
-	"github.com/iotaledger/iota.go/encoding/b1t6"
-	"github.com/iotaledger/iota.go/trinary"
+	"github.com/massyu/iota.go/encoding/b1t6"
+	"github.com/massyu/iota.go/trinary"
 )
 
 // i req: dst, The target slice for the encoded trits.

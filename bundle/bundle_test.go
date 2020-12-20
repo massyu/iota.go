@@ -4,11 +4,11 @@ import (
 	"strings"
 	"time"
 
-	. "github.com/iotaledger/iota.go/bundle"
-	. "github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/encoding/ascii"
-	"github.com/iotaledger/iota.go/transaction"
-	. "github.com/iotaledger/iota.go/trinary"
+	. "github.com/massyu/iota.go/bundle"
+	. "github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/encoding/ascii"
+	"github.com/massyu/iota.go/transaction"
+	. "github.com/massyu/iota.go/trinary"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

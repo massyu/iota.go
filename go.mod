@@ -1,4 +1,4 @@
-module github.com/iotaledger/iota.go
+module github.com/massyu/iota.go
 
 go 1.12
 

@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"encoding/hex"
 
-	. "github.com/iotaledger/iota.go/consts"
-	. "github.com/iotaledger/iota.go/kerl"
-	. "github.com/iotaledger/iota.go/trinary"
+	. "github.com/massyu/iota.go/consts"
+	. "github.com/massyu/iota.go/kerl"
+	. "github.com/massyu/iota.go/trinary"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

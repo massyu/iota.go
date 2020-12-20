@@ -3,11 +3,12 @@ package badger
 import (
 	"bytes"
 	"encoding/gob"
-	"github.com/dgraph-io/badger"
-	. "github.com/iotaledger/iota.go/account/store"
-	. "github.com/iotaledger/iota.go/trinary"
 	"runtime"
 	"time"
+
+	"github.com/dgraph-io/badger"
+	. "github.com/massyu/iota.go/account/store"
+	. "github.com/massyu/iota.go/trinary"
 )
 
 func NewBadgerStore(dir string) (*BadgerStore, error) {
@@ -173,7 +174,7 @@ func (b *BadgerStore) ReadIndex(id string) (uint64, error) {
 	return keyIndex, nil
 }
 
-func (b *BadgerStore) WriteIndex(id string, index uint64) (error) {
+func (b *BadgerStore) WriteIndex(id string, index uint64) error {
 	return b.mutate(id, func(state *AccountState) error {
 		if state == nil {
 			return ErrAccountNotFound
@@ -255,7 +256,7 @@ func (b *BadgerStore) AddTailHash(id string, tailTx Hash, newTailTxHash Hash) er
 		if state == nil {
 			return ErrAccountNotFound
 		}
-		pendingTransfer, ok := state.PendingTransfers[tailTx];
+		pendingTransfer, ok := state.PendingTransfers[tailTx]
 		if !ok {
 			return ErrPendingTransferNotFound
 		}

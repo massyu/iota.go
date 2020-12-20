@@ -1,11 +1,12 @@
 package listener
 
 import (
-	"github.com/iotaledger/iota.go/account/event"
-	"github.com/iotaledger/iota.go/account/plugins/promoter"
-	"github.com/iotaledger/iota.go/account/plugins/transfer/poller"
-	"github.com/iotaledger/iota.go/bundle"
 	"sync"
+
+	"github.com/massyu/iota.go/account/event"
+	"github.com/massyu/iota.go/account/plugins/promoter"
+	"github.com/massyu/iota.go/account/plugins/transfer/poller"
+	"github.com/massyu/iota.go/bundle"
 )
 
 // CallbackEventListener handles callbacks and registration for events against an EventMachine.

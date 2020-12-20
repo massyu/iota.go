@@ -5,16 +5,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/iotaledger/iota.go/address"
-	"github.com/iotaledger/iota.go/bundle"
-	"github.com/iotaledger/iota.go/checksum"
-	. "github.com/iotaledger/iota.go/consts"
-	. "github.com/iotaledger/iota.go/guards/validators"
-	"github.com/iotaledger/iota.go/kerl"
-	"github.com/iotaledger/iota.go/signing"
-	"github.com/iotaledger/iota.go/signing/key"
-	"github.com/iotaledger/iota.go/transaction"
-	. "github.com/iotaledger/iota.go/trinary"
+	"github.com/massyu/iota.go/address"
+	"github.com/massyu/iota.go/bundle"
+	"github.com/massyu/iota.go/checksum"
+	. "github.com/massyu/iota.go/consts"
+	. "github.com/massyu/iota.go/guards/validators"
+	"github.com/massyu/iota.go/kerl"
+	"github.com/massyu/iota.go/signing"
+	"github.com/massyu/iota.go/signing/key"
+	"github.com/massyu/iota.go/transaction"
+	. "github.com/massyu/iota.go/trinary"
 )
 
 // GetLatestSolidSubtangleMilestone returns the latest subtangle milestone.

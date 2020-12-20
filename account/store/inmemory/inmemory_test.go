@@ -2,14 +2,15 @@ package inmemory_test
 
 import (
 	"fmt"
-	"github.com/iotaledger/iota.go/account/store"
-	"github.com/iotaledger/iota.go/account/store/inmemory"
-	"github.com/iotaledger/iota.go/transaction"
-	"github.com/iotaledger/iota.go/trinary"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 	"strings"
 	"time"
+
+	"github.com/massyu/iota.go/account/store"
+	"github.com/massyu/iota.go/account/store/inmemory"
+	"github.com/massyu/iota.go/transaction"
+	"github.com/massyu/iota.go/trinary"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 )
 
 var emptyAddr = strings.Repeat("9", 81)
@@ -36,7 +37,7 @@ var _ = Describe("InMemory", func() {
 			KeyIndex: 100,
 			PendingTransfers: map[string]*store.PendingTransfer{
 				exportedPendingTransferKey: {
-					Tails:  trinary.Hashes{exportedPendingTransfeTailHash},
+					Tails: trinary.Hashes{exportedPendingTransfeTailHash},
 				},
 			},
 			DepositAddresses: map[uint64]*store.StoredDepositAddress{},

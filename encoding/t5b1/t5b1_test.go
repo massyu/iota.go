@@ -5,9 +5,9 @@ import (
 	"math"
 	"strings"
 
-	"github.com/iotaledger/iota.go/consts"
-	. "github.com/iotaledger/iota.go/encoding/t5b1"
-	"github.com/iotaledger/iota.go/trinary"
+	"github.com/massyu/iota.go/consts"
+	. "github.com/massyu/iota.go/encoding/t5b1"
+	"github.com/massyu/iota.go/trinary"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"

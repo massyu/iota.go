@@ -3,12 +3,13 @@ package api
 import (
 	"bytes"
 	"encoding/json"
-	. "github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/pow"
-	"github.com/pkg/errors"
 	"io/ioutil"
 	"net/http"
 	"net/url"
+
+	. "github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/pow"
+	"github.com/pkg/errors"
 )
 
 // DefaultLocalIRIURI is the default URI used when none is given in HTTPClientSettings.

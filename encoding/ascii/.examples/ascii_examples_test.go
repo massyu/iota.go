@@ -3,7 +3,7 @@ package converter_examples_test
 import (
 	"fmt"
 
-	"github.com/iotaledger/iota.go/encoding/ascii"
+	"github.com/massyu/iota.go/encoding/ascii"
 )
 
 // i req: s, The ASCII string to convert to Trytes.

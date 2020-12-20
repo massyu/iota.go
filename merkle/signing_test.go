@@ -1,9 +1,9 @@
 package merkle_test
 
 import (
-	"github.com/iotaledger/iota.go/consts"
-	. "github.com/iotaledger/iota.go/merkle"
-	"github.com/iotaledger/iota.go/trinary"
+	"github.com/massyu/iota.go/consts"
+	. "github.com/massyu/iota.go/merkle"
+	"github.com/massyu/iota.go/trinary"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"

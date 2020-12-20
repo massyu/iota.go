@@ -6,8 +6,8 @@ import (
 	"math"
 	"strings"
 
-	. "github.com/iotaledger/iota.go/consts"
-	iotaGoMath "github.com/iotaledger/iota.go/math"
+	. "github.com/massyu/iota.go/consts"
+	iotaGoMath "github.com/massyu/iota.go/math"
 	"github.com/pkg/errors"
 )
 

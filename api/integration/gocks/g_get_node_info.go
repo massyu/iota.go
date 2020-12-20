@@ -1,9 +1,10 @@
 package gocks
 
 import (
-	. "github.com/iotaledger/iota.go/api"
-	"gopkg.in/h2non/gock.v1"
 	"strings"
+
+	. "github.com/massyu/iota.go/api"
+	"gopkg.in/h2non/gock.v1"
 )
 
 func init() {

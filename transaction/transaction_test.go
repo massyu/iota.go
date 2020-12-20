@@ -2,13 +2,14 @@ package transaction_test
 
 import (
 	"encoding/json"
-	. "github.com/iotaledger/iota.go/api/integration/samples"
-	"github.com/iotaledger/iota.go/bundle"
-	. "github.com/iotaledger/iota.go/transaction"
-	. "github.com/iotaledger/iota.go/trinary"
+	"strings"
+
+	. "github.com/massyu/iota.go/api/integration/samples"
+	"github.com/massyu/iota.go/bundle"
+	. "github.com/massyu/iota.go/transaction"
+	. "github.com/massyu/iota.go/trinary"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"strings"
 )
 
 var _ = Describe("Transaction", func() {

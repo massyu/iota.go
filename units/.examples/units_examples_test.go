@@ -2,7 +2,8 @@ package units_examples_test
 
 import (
 	"fmt"
-	"github.com/iotaledger/iota.go/units"
+
+	"github.com/massyu/iota.go/units"
 )
 
 // i req: val, The source value.

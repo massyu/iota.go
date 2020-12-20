@@ -2,14 +2,15 @@ package store
 
 import (
 	"encoding/gob"
-	"github.com/iotaledger/iota.go/account/deposit"
-	"github.com/iotaledger/iota.go/bundle"
-	"github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/guards"
-	"github.com/iotaledger/iota.go/transaction"
-	. "github.com/iotaledger/iota.go/trinary"
-	"github.com/pkg/errors"
 	"time"
+
+	"github.com/massyu/iota.go/account/deposit"
+	"github.com/massyu/iota.go/bundle"
+	"github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/guards"
+	"github.com/massyu/iota.go/transaction"
+	. "github.com/massyu/iota.go/trinary"
+	"github.com/pkg/errors"
 )
 
 func init() {

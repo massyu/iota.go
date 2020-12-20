@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/iotaledger/iota.go/bundle"
-	"github.com/iotaledger/iota.go/trinary"
+	"github.com/massyu/iota.go/bundle"
+	"github.com/massyu/iota.go/trinary"
 )
 
 // i req: tag, The tag Trytes to pad.

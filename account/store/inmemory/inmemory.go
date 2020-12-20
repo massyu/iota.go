@@ -2,11 +2,12 @@ package inmemory
 
 import (
 	"encoding/json"
-	"github.com/iotaledger/iota.go/account/deposit"
-	. "github.com/iotaledger/iota.go/account/store"
-	"github.com/iotaledger/iota.go/trinary"
 	"sync"
 	"time"
+
+	"github.com/massyu/iota.go/account/deposit"
+	. "github.com/massyu/iota.go/account/store"
+	"github.com/massyu/iota.go/trinary"
 )
 
 func NewInMemoryStore() *InMemoryStore {
@@ -116,7 +117,7 @@ func (mem *InMemoryStore) ReadIndex(id string) (uint64, error) {
 	return state.KeyIndex, nil
 }
 
-func (mem *InMemoryStore) WriteIndex(id string, index uint64) (error) {
+func (mem *InMemoryStore) WriteIndex(id string, index uint64) error {
 	mem.muAccs.Lock()
 	defer mem.muAccs.Unlock()
 	state, ok := mem.accs[id]
@@ -211,7 +212,7 @@ func (mem *InMemoryStore) AddTailHash(id string, tailTx trinary.Hash, newTailTxH
 		return ErrAccountNotFound
 	}
 
-	pendingTransfer, ok := state.PendingTransfers[tailTx];
+	pendingTransfer, ok := state.PendingTransfers[tailTx]
 	if !ok {
 		return ErrPendingTransferNotFound
 	}

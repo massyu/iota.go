@@ -2,19 +2,22 @@ package badger_test
 
 import (
 	"fmt"
-	"github.com/iotaledger/iota.go/account/store"
-	badger_store "github.com/iotaledger/iota.go/account/store/badger"
-	"github.com/iotaledger/iota.go/transaction"
-	"github.com/iotaledger/iota.go/trinary"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/massyu/iota.go/account/store"
+	badger_store "github.com/massyu/iota.go/account/store/badger"
+	"github.com/massyu/iota.go/transaction"
+	"github.com/massyu/iota.go/trinary"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 )
 
 const badgerDBDir = "./account_badger_test"
+
 var emptyAddr = strings.Repeat("9", 81)
+
 const id = "d7e75aa9def2ef9c813313f0e0fb72b9"
 
 var _ = Describe("BadgerDB", func() {
@@ -45,7 +48,7 @@ var _ = Describe("BadgerDB", func() {
 			KeyIndex: 100,
 			PendingTransfers: map[string]*store.PendingTransfer{
 				exportedPendingTransferKey: {
-					Tails:  trinary.Hashes{exportedPendingTransfeTailHash},
+					Tails: trinary.Hashes{exportedPendingTransfeTailHash},
 				},
 			},
 			DepositAddresses: map[uint64]*store.StoredDepositAddress{},

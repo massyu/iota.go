@@ -2,10 +2,11 @@ package time
 
 import (
 	"fmt"
-	"github.com/iotaledger/iota.go/account/deposit"
-	"github.com/iotaledger/iota.go/account/oracle"
-	"github.com/iotaledger/iota.go/account/timesrc"
 	"time"
+
+	"github.com/massyu/iota.go/account/deposit"
+	"github.com/massyu/iota.go/account/oracle"
+	"github.com/massyu/iota.go/account/timesrc"
 )
 
 const dateFormat = "2006-02-01 15:04:05"

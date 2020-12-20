@@ -2,9 +2,9 @@
 package curl
 
 import (
-	. "github.com/iotaledger/iota.go/consts"
-	. "github.com/iotaledger/iota.go/signing/utils"
-	. "github.com/iotaledger/iota.go/trinary"
+	. "github.com/massyu/iota.go/consts"
+	. "github.com/massyu/iota.go/signing/utils"
+	. "github.com/massyu/iota.go/trinary"
 	"github.com/pkg/errors"
 )
 

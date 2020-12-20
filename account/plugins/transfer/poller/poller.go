@@ -1,15 +1,16 @@
 package poller
 
 import (
-	"github.com/iotaledger/iota.go/account"
-	"github.com/iotaledger/iota.go/account/event"
-	"github.com/iotaledger/iota.go/account/store"
-	"github.com/iotaledger/iota.go/account/util"
-	"github.com/iotaledger/iota.go/bundle"
-	. "github.com/iotaledger/iota.go/trinary"
-	"github.com/pkg/errors"
 	"sync"
 	"time"
+
+	"github.com/massyu/iota.go/account"
+	"github.com/massyu/iota.go/account/event"
+	"github.com/massyu/iota.go/account/store"
+	"github.com/massyu/iota.go/account/util"
+	"github.com/massyu/iota.go/bundle"
+	. "github.com/massyu/iota.go/trinary"
+	"github.com/pkg/errors"
 )
 
 // StringSet is a set of strings.

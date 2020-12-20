@@ -3,10 +3,11 @@ package api
 import (
 	"context"
 	"fmt"
-	"github.com/iotaledger/iota.go/bundle"
-	. "github.com/iotaledger/iota.go/consts"
-	. "github.com/iotaledger/iota.go/trinary"
 	"time"
+
+	"github.com/massyu/iota.go/bundle"
+	. "github.com/massyu/iota.go/consts"
+	. "github.com/massyu/iota.go/trinary"
 )
 
 // FindTransactionsQuery represents the payload to the FindTransactions API call.

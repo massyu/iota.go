@@ -3,8 +3,8 @@ package curl_examples_test
 import (
 	"fmt"
 
-	"github.com/iotaledger/iota.go/curl"
-	"github.com/iotaledger/iota.go/trinary"
+	"github.com/massyu/iota.go/curl"
+	"github.com/massyu/iota.go/trinary"
 )
 
 // o: SpongeFunction, The SpongeFunction interface using CurlP81.

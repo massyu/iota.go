@@ -1,7 +1,7 @@
 package samples
 
 import (
-	. "github.com/iotaledger/iota.go/trinary"
+	. "github.com/massyu/iota.go/trinary"
 )
 
 var SampleAddresses = Hashes{

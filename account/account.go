@@ -1,20 +1,21 @@
 package account
 
 import (
-	"github.com/iotaledger/iota.go/account/deposit"
-	"github.com/iotaledger/iota.go/account/event"
-	"github.com/iotaledger/iota.go/account/store"
-	"github.com/iotaledger/iota.go/api"
-	"github.com/iotaledger/iota.go/bundle"
-	"github.com/iotaledger/iota.go/consts"
-	"github.com/iotaledger/iota.go/guards"
-	"github.com/iotaledger/iota.go/guards/validators"
-	"github.com/iotaledger/iota.go/kerl"
-	"github.com/iotaledger/iota.go/transaction"
-	. "github.com/iotaledger/iota.go/trinary"
-	"github.com/pkg/errors"
 	"sync"
 	"time"
+
+	"github.com/massyu/iota.go/account/deposit"
+	"github.com/massyu/iota.go/account/event"
+	"github.com/massyu/iota.go/account/store"
+	"github.com/massyu/iota.go/api"
+	"github.com/massyu/iota.go/bundle"
+	"github.com/massyu/iota.go/consts"
+	"github.com/massyu/iota.go/guards"
+	"github.com/massyu/iota.go/guards/validators"
+	"github.com/massyu/iota.go/kerl"
+	"github.com/massyu/iota.go/transaction"
+	. "github.com/massyu/iota.go/trinary"
+	"github.com/pkg/errors"
 )
 
 // Account is a thread-safe object encapsulating address management, input selection, promotion and reattachments.

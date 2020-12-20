@@ -3,7 +3,7 @@
 
 package bct
 
-import "github.com/iotaledger/iota.go/curl"
+import "github.com/massyu/iota.go/curl"
 
 var Indices = curl.Indices
 

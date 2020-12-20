@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/iotaledger/iota.go/consts"
-	. "github.com/iotaledger/iota.go/curl"
-	"github.com/iotaledger/iota.go/trinary"
+	"github.com/massyu/iota.go/consts"
+	. "github.com/massyu/iota.go/curl"
+	"github.com/massyu/iota.go/trinary"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"

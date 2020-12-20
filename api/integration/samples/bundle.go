@@ -1,9 +1,10 @@
 package samples
 
 import (
-	"github.com/iotaledger/iota.go/bundle"
-	. "github.com/iotaledger/iota.go/trinary"
 	"strings"
+
+	"github.com/massyu/iota.go/bundle"
+	. "github.com/massyu/iota.go/trinary"
 )
 
 var Bundle = bundle.Bundle{
