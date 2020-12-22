@@ -3,8 +3,8 @@ package trinary_test
 import (
 	"strings"
 
-	. "github.com/iotaledger/iota.go/consts"
-	. "github.com/iotaledger/iota.go/trinary"
+	. "github.com/massyu/iota.go/consts"
+	. "github.com/massyu/iota.go/trinary"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
@@ -159,29 +159,6 @@ var _ = Describe("Trinary", func() {
 		})
 	})
 
-	Context("TritsToBytes()", func() {
-		It("should return bytes for valid trits", func() {
-			trits := Trits{-1, 0, 1, 1, 0, 1, 1, 0, -1, -1, 1, 0, 1}
-			bytes, err := TritsToBytes(trits)
-			Expect(err).ToNot(HaveOccurred())
-			Expect(bytes).To(Equal([]byte{0x23, 0x98, 0x0A}))
-		})
-	})
-
-	Context("BytesToTrits()", func() {
-		It("should return trits for valid bytes", func() {
-			expTrits := Trits{-1, 0, 1, 1, 0, 1, 1, 0, -1, -1, 1, 0, 1}
-			trits, err := BytesToTrits([]byte{0x23, 0x98, 0x0A}, len(expTrits))
-			Expect(trits).To(Equal(expTrits))
-			Expect(err).ToNot(HaveOccurred())
-		})
-
-		It("should return an error for invalid numTrits length", func() {
-			_, err := BytesToTrits([]byte{0x23, 0x98, 0x0A}, 10)
-			Expect(err).To(HaveOccurred())
-		})
-	})
-
 	Context("ReverseTrits()", func() {
 		It("should correctly reverse trits", func() {
 			rev := ReverseTrits(Trits{1, 0, -1})
@@ -272,35 +249,6 @@ var _ = Describe("Trinary", func() {
 		})
 	})
 
-	Context("EncodedLength()", func() {
-		It("should return correct length", func() {
-			v := EncodedLength(-1)
-			Expect(v).To(Equal(uint64(4)))
-
-			v = EncodedLength(-4)
-			Expect(v).To(Equal(uint64(4)))
-		})
-	})
-
-	Context("TrytesToBytes()", func() {
-		It("should return correct bytes", func() {
-			v, err := TrytesToBytes("ABCD")
-			Expect(err).ToNot(HaveOccurred())
-			Expect(v).To(Equal([]byte{55, 90, 1}))
-
-			v, err = TrytesToBytes("GKLVNYXFYXUDURQE9HQKEAETVRREBKKTL9TOKZRICQMRNTVODHSKGVSFRLFAGGMPRSSMJ9ROBWUZZ9999")
-			Expect(err).ToNot(HaveOccurred())
-			Expect(v).To(Equal([]byte{61, 118, 137, 173, 99, 228, 102, 238, 163, 5, 199, 96, 32, 190, 209, 247, 189, 100, 65, 35, 193, 42, 254, 78, 232, 38, 136, 101, 44, 73, 46, 103, 182, 6, 35, 11, 209, 121, 171, 19, 119, 3, 166, 180, 201, 228, 0, 0, 0}))
-		})
-	})
-	Context("BytesToTrytes()", func() {
-		It("should return correct trytes", func() {
-			v, err := BytesToTrytes([]byte{61, 118, 137, 173, 99, 228, 102, 238, 163, 5, 199, 96, 32, 190, 209, 247, 189, 100, 65, 35, 193, 42, 254, 78, 232, 38, 136, 101, 44, 73, 46, 103, 182, 6, 35, 11, 209, 121, 171, 19, 119, 3, 166, 180, 201, 228, 0, 0, 0}, 81)
-			Expect(err).ToNot(HaveOccurred())
-			Expect(v).To(Equal("GKLVNYXFYXUDURQE9HQKEAETVRREBKKTL9TOKZRICQMRNTVODHSKGVSFRLFAGGMPRSSMJ9ROBWUZZ9999"))
-		})
-	})
-
 	Context("IntToTrytes()", func() {
 		It("should return correct trytes", func() {
 			v := IntToTrytes(-1, 1)
@@ -318,34 +266,6 @@ var _ = Describe("Trinary", func() {
 
 			v = TrytesToInt("ABCDEFGH")
 			Expect(v).To(Equal(int64(86483600668)))
-		})
-	})
-
-	Context("EncodeInt64()", func() {
-		It("should return correct trits", func() {
-			v, s, err := EncodeInt64(6)
-			Expect(err).ToNot(HaveOccurred())
-			Expect(s).To(Equal(uint64(4)))
-			Expect(v).To(Equal(Trits{0, -1, 1, 0}))
-
-			v, s, err = EncodeInt64(500)
-			Expect(err).ToNot(HaveOccurred())
-			Expect(s).To(Equal(uint64(12)))
-			Expect(v).To(Equal(Trits{-1, -1, -1, 1, 0, -1, 1, 0, 0, 0, 0, 0}))
-		})
-	})
-
-	Context("DecodeInt64()", func() {
-		It("should return correct int64", func() {
-			v, s, err := DecodeInt64(Trits{0, -1, 1, 0, -1, 1})
-			Expect(err).ToNot(HaveOccurred())
-			Expect(s).To(Equal(uint64(4)))
-			Expect(v).To(Equal(int64(6)))
-
-			v, s, err = DecodeInt64(Trits{-1, -1, -1, 1, 0, -1, 1, 0, 0, 0, 0, 0, -1, 1, 0, 1, 0, 0, 0})
-			Expect(err).ToNot(HaveOccurred())
-			Expect(s).To(Equal(uint64(12)))
-			Expect(v).To(Equal(int64(500)))
 		})
 	})
 
