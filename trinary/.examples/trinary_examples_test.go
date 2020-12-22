@@ -2,8 +2,7 @@ package trinary_examples_test
 
 import (
 	"fmt"
-
-	"github.com/massyu/iota.go/trinary"
+	"github.com/iotaledger/iota.go/trinary"
 )
 
 // i req: t, The Trit value to check.
